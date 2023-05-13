@@ -65,7 +65,7 @@ function App() {
       <Box>
         <Box
           display={"grid"}
-          gridTemplateColumns={"repeat(2,1fr)"}
+          gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]}
           gap={"20px"}
           padding={"20px"}
         >

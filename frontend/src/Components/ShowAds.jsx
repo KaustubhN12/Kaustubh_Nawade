@@ -16,8 +16,9 @@ const ShowAds = ({
       alignItems={"center"}
       padding={"20px"}
       _hover={{ backgroundColor: "RGB(239 238 239)" }}
+      flexDirection={["column","column","row"]}
     >
-      <Box w={"50%"}>
+      <Box w={["100%","100%","50%"]}>
         <Image
           borderRadius={"8px"}
           width={"320px"}
@@ -25,7 +26,7 @@ const ShowAds = ({
           alt={companyName}
         />
       </Box>
-      <Box w={"50%"}>
+      <Box w={["100%","100%","50%"]}>
         <Text fontSize={"3xl"} fontWeight={"semibold"}>
           {companyName}{" "}
           <Badge fontSize="0.4em" colorScheme="green">
