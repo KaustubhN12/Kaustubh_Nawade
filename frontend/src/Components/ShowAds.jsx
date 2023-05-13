@@ -10,6 +10,7 @@ const ShowAds = ({
   imageUrl,
 }) => {
   return (
+    
     <Flex
       border={"1px solid RGB(230 226 226)"}
       borderRadius={"8px"}
@@ -43,6 +44,7 @@ const ShowAds = ({
       </Box>
     </Flex>
   );
+
 };
 
 export default ShowAds;
