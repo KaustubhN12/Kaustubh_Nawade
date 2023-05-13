@@ -15,7 +15,6 @@ adsRouter.get("/", async (req, res) => {
         ],
       });
       res.send({ data: ads });
-      
     } else {
       let ads = await AdsModel.find();
       res.send({ data: ads });
