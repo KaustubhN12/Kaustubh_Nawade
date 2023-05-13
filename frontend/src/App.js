@@ -15,11 +15,15 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    getData(query).then((res) => {
-      console.log(res);
-      setAds(res);
-      setLoading(false);
-    });
+    let id = setTimeout(() => {
+      getData(query).then((res) => {
+        console.log(res);
+        setAds(res);
+        setLoading(false);
+      });
+    }, 700);
+
+    return () => clearTimeout(id);
   }, [query]);
 
   return (

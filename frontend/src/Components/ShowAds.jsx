@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Badge, Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
 const ShowAds = ({
@@ -27,7 +27,10 @@ const ShowAds = ({
       </Box>
       <Box w={"50%"}>
         <Text fontSize={"3xl"} fontWeight={"semibold"}>
-          {companyName}
+          {companyName}{" "}
+          <Badge fontSize="0.4em" colorScheme="green">
+            {CTA}
+          </Badge>
         </Text>
         <Text as="i" fontSize={"1xl"} color={"gray"}>
           {primaryText}
