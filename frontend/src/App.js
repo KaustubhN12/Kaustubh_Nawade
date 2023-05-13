@@ -53,7 +53,7 @@ function App() {
         </Box>
       )}
 
-      {ads.length == 0 && (
+      {ads.length == 0 && query && (
         <Box alignItems={"center"}>
           <Image
             margin={"auto"}
